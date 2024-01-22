@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hokeys</title>
+
+    <!-----Daisy UI-->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!--google fonts Manrope-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!--custom styles-->
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-primary': '#FF4240',
+            'hero-font': 'rgba(255, 255, 255, 0.60)',
+          }
+        }
+      }
+    }
+  </script>
+
+<style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
+
+</head>
+<body class="font-manrope">
+    <!----nav bar-->
+    <header class="md-container mx-auto">
+        <nav class="mx-auto pl-24 pr-30">
+            <div class="navbar bg-base-100">
+            <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-4xl">Hockey<span class="btn-primary">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal text-base px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end pr-32 gap-12">
+            <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            </button> 
+          <a class="btn btn-error btn-primary text-white text-xl">Get Ticket</a>
+        </div>
+            </div>
+        </nav>
+
+    <!---Slider-->   
+    
+    <div class="carousel w-full h-[550px] py-16 container mx-auto ml-24">
+        <!--slide1-->
+        <div id="slide1" class="carousel-item relative w-full h-[550px] relative">
+          <img src="./Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+          <div class="bg-accent-content h-[100px] text-white p-12 absolute w-[502px] bottom-16 end-7 text-left">
+            <h3 class="text-[24px]">Meet all the heroes from the field</h3>
+            <p class="text-[16px] hero-font">Heroes are devine, they are not moron but they are blessed and brave. You can find your inner heroes or favourite one here.</p>
+          </div>
+        </div> 
+        <!--slide2-->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full h-[550px]" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!--slide3-->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./Images/10.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!--slide4-->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </header> 
+    <main class="md:container md:mx-auto">
+
+    </main> 
+</body>
+</html>
